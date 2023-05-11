@@ -114,7 +114,7 @@ csv_filename = 'servicereport.csv'
 csv_filepath = '/TNDSV2.5/'
 
 # Download the zip file to a specified directory
-data_dir = './traveline/data'
+data_dir = './data'
 if not os.path.exists(data_dir):
     os.mkdir(data_dir)
     print('Directory created: ' + data_dir)

@@ -39,7 +39,7 @@ def insert_data(data):
 
 url = "https://bustimes.org/api/vehicles/?id=&vehicle_type=&livery=&withdrawn=&search=&fleet_code=&reg=&slug=&operator=FABD"
 
-conn = sqlite3.connect('vehicles.db')
+conn = sqlite3.connect('data/vehicles.db')
 c = conn.cursor()
 
 c.execute('''CREATE TABLE IF NOT EXISTS vehicles

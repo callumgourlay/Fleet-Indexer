@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    conn = sqlite3.connect('vehicles.db')
+    conn = sqlite3.connect('data/vehicles.db')
     c = conn.cursor()
     c.execute('''SELECT vehicles.id, vehicles.slug, vehicles.fleet_number, vehicles.fleet_code,
                         vehicles.reg, liveries.name, vehicles.branding,
