@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First Scotland Bus Fleet Data</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>First Glasgow Bus Fleet Data</h1>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Slug</th>
+                        <th>Fleet Number</th>
+                        <th>Fleet Code</th>
+                        <th>Reg</th>
+                        <th>Livery</th>
+                        <th>Branding</th>
+                        <th>Operator</th>
+                        <th>Garage</th>
+                        <th>Vehicle Type</th>
+                        <th>Electric</th>
+                        <th>Double Decker</th>
+                        <th>Coach</th>
+                        <th>Withdrawn</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in fgla_data %}
+                    <tr>
+                        {% for value in row %}
+                        <td>{{ value }}</td>
+                        {% endfor %}
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="container">
+            <h1>First Aberdeen Bus Fleet Data</h1>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Slug</th>
+                        <th>Fleet Number</th>
+                        <th>Fleet Code</th>
+                        <th>Reg</th>
+                        <th>Livery</th>
+                        <th>Branding</th>
+                        <th>Operator</th>
+                        <th>Garage</th>
+                        <th>Vehicle Type</th>
+                        <th>Electric</th>
+                        <th>Double Decker</th>
+                        <th>Coach</th>
+                        <th>Withdrawn</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in fabd_data %}
+                    <tr>
+                        {% for value in row %}
+                        <td>{{ value }}</td>
+                        {% endfor %}
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
